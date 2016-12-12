@@ -1,0 +1,20 @@
+{
+  "name": "tsuyama-mimamori",
+  "authors": [
+    "Hagihara Ryosuke <raryosu@gmail.com>"
+  ],
+  "description": "津山市のオープンデータを用いて財政状況を可視化",
+  "main": "",
+  "license": "MIT",
+  "homepage": "http://mimamori.sysken.org/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "Rin": "v3.3.7-2"
+  }
+}

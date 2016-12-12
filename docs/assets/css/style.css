@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+body {
+  margin-top: 80px;
+}
+
+.navbar {
+  width: 100vw;
+}
+.navbar .navbar-brand {
+  display: inline-block;
+  padding-top: 5px;
+}
+.navbar .navbar-brand img {
+  height: 80px;
+}
+
+main {
+  width: 100vw;
+  overflow-x: scroll;
+}
+
+.jumbotron.special {
+  position: relative;
+  min-height: 530px;
+  margin-bottom: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #e1f4fb;
+  background-image: url("../img/circle.png");
+  background-repeat: no-repeat;
+  background-position: -35% center;
+  background-size: 70%;
+}
+.jumbotron.special .honoka {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 400px;
+  height: 530px;
+  background-repeat: no-repeat;
+}
+.jumbotron.special .outline {
+  margin-top: 180px;
+}
+.jumbotron.special h1,
+.jumbotron.special .h1 {
+  font-family: Montserrat, sans-serif;
+}
+.jumbotron.special .download {
+  margin: 24px auto 12px;
+}
+.jumbotron.special .basedon {
+  margin: 12px auto;
+  color: #777;
+  text-shadow: #fff 0 1px 2px;
+}
+
+section {
+  padding: 100px 0;
+}
+section.section-default {
+  background-color: #fff;
+}
+section.section-inverse {
+  background-color: #e1f4fb;
+}
+section .subtitle {
+  margin-bottom: 24px;
+  text-align: center;
+}
+section .subtitle h2 {
+  margin-top: 0;
+}
+
+footer {
+  padding: 40px 0;
+  color: #eee;
+  background-color: #333;
+}
+footer .copyright {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

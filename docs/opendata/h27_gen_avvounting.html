@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name=”robots” content=”noindex”> 
+
+    <title>平成27年度一般会計 | 津山市財政見守り隊(開発中)</title>
+
+
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="/js/d3.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body class="no-thank-yu">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="/assets/img/logo_header.svg"></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">公開中のデータ<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="opendata/h27_gen_avvounting.html">平成27年 一般会計・決済データ</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://www.city.tsuyama.lg.jp/life/index2.php?id=5530">津山市オープンデータ</a></li>
+            <li><a href="http://sysken.org">津山高専 システム研究部</a></li>
+            <li><a href="http://raryosu.info">Raryosu.info</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header role="bunner">
+      <div class="container">
+        <h1>平成27年度 一般会計・決算</h1>
+        <p><a href="https://www.city.tsuyama.lg.jp/life/index2.php?id=5530">津山市オープンデータページ</a>にて
+        公開されている「津山市 一般会計・決算 2015分」のうち平成27年度分をグラフ化して表示しています。</p>
+      </div><!-- /.container -->
+    </header>
+    <main>
+    <article>
+      <div class="container">
+        <h1>歳入</h1>
+        <div id="h27gen-in"></div>
+        <h1>歳出</h1>
+        <div id="h27gen-out"></div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">利用データ</h3>
+          </div>
+          <div class="panel-body">
+            <a href="https://www.city.tsuyama.lg.jp/life/index2.php?id=5530">"津山市 一般会計・決算 2015分 20161201"</a>、津山市、<a href="https://creativecommons.org/licenses/by/4.0/deed.ja"><img src="/assets/img/ccby.png"></a>
+          </div>
+        </div>
+      </div>
+    </article>
+    </main>
+
+    <footer role="footer">
+      <div class="container">
+        <p>&copy; 2016 SYSKEN / Hagihara Ryosuke</p>
+      </div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/script-d3.js"></script>
+    <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-88773250-1', 'auto');
+ga('send', 'pageview');
+    </script>
+  </body>
+</html>
