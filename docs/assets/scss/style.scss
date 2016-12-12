@@ -22,6 +22,37 @@ body {
 	}
 }
 
+.social-button {
+	position: relative;
+	padding: $padding-large-vertical 0;
+	margin: 0 auto !important;
+	overflow: hidden;
+	> ul {
+		position: relative;
+		left: 50%;
+		float: left;
+		padding: 0;
+		margin: 0;
+		list-style: outside none none;
+		> li {
+			position: relative;
+			left: -50%;
+			float: left;
+			padding: 0;
+			margin: 0 10px;
+			.fb-like {
+				> span {
+					vertical-align: 0 !important;
+				}
+			}
+		}
+	}
+}
+
+.social {
+	padding: $padding-large-vertical 0;
+	background: $gray-lighter;
+}
 main {
 	width: 100vw;
 	overflow-x: scroll;
