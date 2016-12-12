@@ -1,10 +1,24 @@
 # 津山市財政見守り隊
-## 困ること
-* 各項目のタイトルが不統一(「平成xx年」と「xx年」など)
-* データが無い所が "-" によって埋められている(0で埋めてあるほうがデータとして扱いやすい)
-* 数値が3桁区切りになっている(,で区切るのは視覚的には分かり易いが，データとして扱う上では不便)
-* 視覚的な見た目を整えるための改行がある(データとして扱うとき前処理が必要)
-* Excelデータによる公開である(一度CSVデータに変換する必要がある)
-* 決算と予算が同一シートにある(別のファイルのほうが扱いやすい)
-* 1つのファイルに2つの表がある(下準備が必要になる)
+
+## About
+
+津山市のオープンデータを用いた財政の可視化を行っています。
+
+http://miamori.sysken.org/
+
+## データ
+
+* https://www.city.tsuyama.lg.jp/life/index2.php?id=5530
+
+## License
+
+```
+The MIT License (MIT)
+Copyright (c) 2016 SYSKEN / Hagihara Ryosuke
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.```
 
