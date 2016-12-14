@@ -16,6 +16,7 @@ body {
 
 main {
   width: 100vw;
+  overflow-x: hidden;
 }
 .social-button {
   position: relative;
@@ -45,6 +46,7 @@ main {
 .svg-container {
   width: 100vw;
   overflow-x: scroll;
+  padding-left: 50px;
 }
 
 .social {
