@@ -85,7 +85,7 @@ d3.csv("/tsuyama/expenditure.csv", function(csvdata) {
 function make(dataset, labelset, max_width, canvas) {
   var svg = canvas.append("svg")
     .attr({
-      width: parseInt(max_width) / 8000,
+      width: parseInt(max_width) / 8000 + 50,
       height: dataset.length * 30,
     });
   svg.selectAll('rect')
