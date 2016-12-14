@@ -7,6 +7,47 @@ d3.csv("../tsuyama/revenue.csv", function(csvdata) {
   var labelset = [];
   var max_width = 0;
   for(var count=0; count<csvdata.length; count++) {
+    var money = parseInt(csvdata[count]["26年度予算"]
+        .replace(/,/g, "")
+        .replace(/－/g, "0"));
+    var label = csvdata[count]["款"] + " " + money.toLocaleString() + "千円";
+    if(max_width < money) {
+      max_width = money;
+    }
+    dataset.push(money);
+    labelset.push(label);
+  }
+  var canvas = d3.select("#h26gen-in");
+  make(dataset, labelset, max_width, canvas);
+});
+
+/* =歳出= */
+d3.csv("../tsuyama/expenditure.csv", function(csvdata) {
+  var dataset = [];
+  var labelset = [];
+  var max_width = 0;
+  for(var count=0; count<csvdata.length; count++) {
+    var money = parseInt(csvdata[count]["26年度予算"]
+        .replace(/,/g, "")
+        .replace(/－/g, "0"));
+    var label = csvdata[count]["款"] + " " + money.toLocaleString() + "千円";
+    if(max_width < money) {
+      max_width = money;
+    }
+    dataset.push(money);
+    labelset.push(label);
+  }
+  var canvas = d3.select("#h26gen-out");
+  make(dataset, labelset, max_width, canvas);
+});
+
+/* ==平成27年一般会計・決算== */
+/* =歳入= */
+d3.csv("../tsuyama/revenue.csv", function(csvdata) {
+  var dataset = [];
+  var labelset = [];
+  var max_width = 0;
+  for(var count=0; count<csvdata.length; count++) {
     var money = parseInt(csvdata[count]["27年度予算"]
         .replace(/,/g, "")
         .replace(/－/g, "0"));
