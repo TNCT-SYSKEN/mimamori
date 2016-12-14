@@ -1,8 +1,8 @@
 'use strict;'
 
-/* ==平成27年一般会計・決算== */
+/* ==平成26年一般会計・決算== */
 /* =歳入= */
-d3.csv("../tsuyama/revenue.csv", function(csvdata) {
+d3.csv("/tsuyama/revenue.csv", function(csvdata) {
   var dataset = [];
   var labelset = [];
   var max_width = 0;
@@ -22,7 +22,7 @@ d3.csv("../tsuyama/revenue.csv", function(csvdata) {
 });
 
 /* =歳出= */
-d3.csv("../tsuyama/expenditure.csv", function(csvdata) {
+d3.csv("/tsuyama/expenditure.csv", function(csvdata) {
   var dataset = [];
   var labelset = [];
   var max_width = 0;
@@ -43,7 +43,7 @@ d3.csv("../tsuyama/expenditure.csv", function(csvdata) {
 
 /* ==平成27年一般会計・決算== */
 /* =歳入= */
-d3.csv("../tsuyama/revenue.csv", function(csvdata) {
+d3.csv("/tsuyama/revenue.csv", function(csvdata) {
   var dataset = [];
   var labelset = [];
   var max_width = 0;
@@ -63,7 +63,7 @@ d3.csv("../tsuyama/revenue.csv", function(csvdata) {
 });
 
 /* =歳出= */
-d3.csv("../tsuyama/expenditure.csv", function(csvdata) {
+d3.csv("/tsuyama/expenditure.csv", function(csvdata) {
   var dataset = [];
   var labelset = [];
   var max_width = 0;
@@ -83,7 +83,6 @@ d3.csv("../tsuyama/expenditure.csv", function(csvdata) {
 });
 
 function make(dataset, labelset, max_width, canvas) {
-  console.log(max_width);
   var svg = canvas.append("svg")
     .attr({
       width: parseInt(max_width) / 8000,
