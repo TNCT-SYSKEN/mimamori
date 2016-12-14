@@ -16,6 +16,9 @@ body {
 
 main {
   width: 100vw;
+}
+.svg-container {
+  width: 100vw;
   overflow-x: scroll;
 }
 .social-button {
