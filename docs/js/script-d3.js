@@ -7,7 +7,7 @@ d3.csv("/tsuyama/revenue.csv", function(csvdata) {
   var labelset = [];
   var max_width = 0;
   for(var count=0; count<csvdata.length; count++) {
-    var money = parseInt(csvdata[count]["26年度予算"]
+    var money = parseInt(csvdata[count]["26年度決算"]
         .replace(/,/g, "")
         .replace(/－/g, "0"));
     var label = csvdata[count]["款"] + " " + money.toLocaleString() + "千円";
@@ -27,7 +27,7 @@ d3.csv("/tsuyama/expenditure.csv", function(csvdata) {
   var labelset = [];
   var max_width = 0;
   for(var count=0; count<csvdata.length; count++) {
-    var money = parseInt(csvdata[count]["26年度予算"]
+    var money = parseInt(csvdata[count]["26年度決算"]
         .replace(/,/g, "")
         .replace(/－/g, "0"));
     var label = csvdata[count]["款"] + " " + money.toLocaleString() + "千円";
