@@ -16,7 +16,6 @@ body {
 
 main {
   width: 100vw;
-  overflow-x: scroll;
 }
 .social-button {
   position: relative;
@@ -41,6 +40,11 @@ main {
 }
 .social-button > ul > li .fb-like > span {
   vertical-align: 0 !important;
+}
+
+.svg-container {
+  width: 100vw;
+  overflow-x: scroll;
 }
 
 .social {
