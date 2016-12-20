@@ -88,6 +88,21 @@ function make(dataset, labelset, max_width, canvas) {
       width: parseInt(max_width) / 8000 + 50,
       height: dataset.length * 30,
     });
+  var xScale = d3.scale.linear()
+    .domain([1000,2200])
+    .range([0,width]);
+
+  var yScale = d3.scale.log()
+    .domain([0.1,10])
+    .range([height,0]);
+
+  var line = d3.svg.line()
+    .x(function(d,i){
+      return xScale(d.Year);
+    })
+  .y(function(d,i){
+    return yScale(d.Population); 
+  });  
   svg.selectAll('rect')
     .data(dataset)
     .enter()
@@ -107,8 +122,8 @@ function make(dataset, labelset, max_width, canvas) {
       x: 2,
       y: function(d, i) { return 20 + 30*i; },
     })
-    .text(function(d) {
-      return d;
-    });
+  .text(function(d) {
+    return d;
+  });
 }
 
