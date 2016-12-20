@@ -90,7 +90,7 @@ function make(dataset, labelset, max_width, canvas) {
       width: width,
       height: height,
     });
-  var xScale = d3.scale.linear()
+  var xScale = d3.scale.log()
     .domain([1000,2200])
     .range([0,width]);
 
