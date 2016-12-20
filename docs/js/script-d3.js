@@ -90,13 +90,6 @@ function make(dataset, labelset, max_width, canvas) {
       width: width,
       height: height,
     });
-  var xScale = d3.scale.log()
-    .domain([1000,2200])
-    .range([0,width]);
-
-  var yScale = d3.scale.log()
-    .domain([0.1,10])
-    .range([height,0]);
 
   var line = d3.svg.line()
     .x(function(d,i){
@@ -115,8 +108,7 @@ function make(dataset, labelset, max_width, canvas) {
       width : function(d) { return d/8000; },
       height : 25,
       fill : '#6fbadd'
-    })
-    .call(d3.svg.scale(xScale));
+    });
   svg.selectAll('text')
     .data(labelset)
     .enter()
