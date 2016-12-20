@@ -115,7 +115,8 @@ function make(dataset, labelset, max_width, canvas) {
       width : function(d) { return d/8000; },
       height : 25,
       fill : '#6fbadd'
-    });
+    })
+    .call(d3.svg.scale(xScale));
   svg.selectAll('text')
     .data(labelset)
     .enter()
