@@ -10,6 +10,13 @@ http://miamori.sysken.org/
 
 * https://www.city.tsuyama.lg.jp/life/index2.php?id=5530
 
+## お問い合わせ
+
+製作者までお問い合わせください。
+
+* [Facebook](https://facebook.com/raryosu107)
+* [me@raryosu.info](mailto:me@raryosu.info)
+
 ## License
 
 ```
