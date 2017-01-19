@@ -9,7 +9,7 @@ d3.csv("/tsuyama/revenue.csv", function(csvdata) {
   for(var count=0; count<csvdata.length; count++) {
     var money = parseInt(csvdata[count]["26年度決算"]
         .replace(/,/g, "")
-        .replace(/－/g, "0"));
+        .replace(/[－-]/g, "0"));
     var label = csvdata[count]["款"] + " " + money.toLocaleString() + "千円";
     if(max_width < money) {
       max_width = money;
